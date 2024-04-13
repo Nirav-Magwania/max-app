@@ -27,5 +27,5 @@ require __DIR__ .'/Flight/flight.php';
 Route::get('/',function(){ return view('welcome');});
 Route::post('/sendMyMail',[MailController::class,'sendMail'])->name('send.email');
 
-
+//Route::get('/countusers',[MemberController::class,'UserCount']);
  
