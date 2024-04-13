@@ -15,7 +15,12 @@ use Mail;
 
 class MemberController extends Controller
 {
-    // test code for member controller for git push comment is unnecessary and can be removed any time
+    public function userCount()
+    {
+        return User::all()->count();
+    }
+
+
     public function attachMemberToRole(Request $request)
     {
         try {
